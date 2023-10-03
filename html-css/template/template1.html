@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav {
+            height: 104px;
+            background-color: #2C3D4F;
+            padding-left: 5%;
+            padding-right: 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #logo {
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        ul a {
+            margin-left: 10px;
+        }
+
+        ul a:hover {
+            color: #19BC9C;
+        }
+
+        header {
+            color: #fff;
+            background-color: #19BC9C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 582px;
+        }
+
+        header h1 {
+            font-size: 64px;
+        }
+
+        header p {
+            font-size: 24px;
+        }
+
+        header i {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        hr {
+            border-style: none;
+            border: none;
+            width: 160px;
+            background-color: #fff;
+            height: 3px;
+        }
+
+        footer {
+            background-color: #1A252F;
+            color: #fff;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 7% 50px 7%;
+            background-color: #2C3D4F;
+
+        }
+
+        .box {
+            width: 20%;
+            color: #fff;
+            font-size: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a id="logo" href="#">Start Bootstrap</a>
+
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" width="240"
+            height="255" alt="">
+
+        <h1>Start Bootstrap</h1>
+        <div style="display: flex">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+        <p>Graphic Artist - Web Designer - Illustrator</p>
+    </header>
+
+    <div class="about">
+        <div class="box">
+            <h1>LOCATION</h1>
+        </div>
+        <div class="box">
+            <h1>AROUND THE WEB
+            </h1>
+        </div>
+        <div class="box">
+            <h1>ABOUT FREELANCER
+            </h1>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © Your Website 2023</p>
+    </footer>
+</body>
+
+</html>

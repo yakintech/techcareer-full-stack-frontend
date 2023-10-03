@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: aquamarine;
+        }
+        .box {
+            width: 20%;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.175);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        #container {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                width: 40%;
+                border-style: solid;
+                border-color: rgba(0, 0, 0, 0.175);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            body{
+            background-color: tomato;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="box">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="">
+            <h3>Fancy Product</h3>
+            <p>$40.00 - $80.00</p>
+            <a style="margin-bottom: 20px" href="">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="">
+            <h3>Fancy Product</h3>
+            <p>$40.00 - $80.00</p>
+            <a style="margin-bottom: 20px" href="">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="">
+            <h3>Fancy Product</h3>
+            <p>$40.00 - $80.00</p>
+            <a style="margin-bottom: 20px" href="">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="">
+            <h3>Fancy Product</h3>
+            <p>$40.00 - $80.00</p>
+            <a style="margin-bottom: 20px" href="">Add to Cart</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
