@@ -1,0 +1,19 @@
+.leftMenu{
+    width: 20%;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+
+    }
+    img{
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+
+}
+.content{
+    width: 80%;
+}
