@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    var cities = ["Ankara", "Istanbul", "Izmir", "Aydın", "Konya", "Diyarbakır"]
+
+    //burada kaç adet şehir var?
+    console.log(cities.length);
+
+    //yukarıdaki diziye yeni bir şehir eklemek istiyorum
+    cities.push("Canakkale")
+
+    //yukarıdaki diziyi ters çevirmek istiyorum
+    cities.reverse()
+
+    //metin dizisini sıralar
+    cities.sort()
+  
+
+    //Yukarıdaki diziden "Ankara" yı silmek istiyorum
+    //Bir js arrayda önce elemanı buluyorum ( index no)
+    var indexNo = cities.indexOf("Ankara")
+
+    //splice metodu silmeye yarar
+    cities.splice(indexNo, 1)
+
+    console.log(cities);
+
+</script>
+
+</html>
