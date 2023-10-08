@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <div>
+        <label for="">Company Name</label>
+        <input type="text" name="" id="companyName">
+    </div>
+
+    <div>
+        <label for="">Contact Name</label>
+        <input type="text" name="" id="contactName">
+    </div>
+
+    <div>
+        <label for="">Contact Title</label>
+        <input type="text" name="" id="contactTitle">
+    </div>
+
+    <div>
+        <button onclick="add()">Add</button>
+    </div>
+
+</body>
+<script>
+
+    function add() {
+        var companyName = document.getElementById('companyName').value;
+        var contactName = document.getElementById('contactName').value;
+        var contactTitle = document.getElementById('contactTitle').value;
+
+        var newSupplier = {
+            companyName: companyName,
+            contactName: contactName,
+            contactTitle: contactTitle
+        }
+
+        axios.post('https://northwind.vercel.app/api/suppliers', newSupplier)
+            .then(res => {
+                console.log(res.data);
+                console.log('SUCCESS!');
+            })
+
+    }
+
+</script>
+
+</html>

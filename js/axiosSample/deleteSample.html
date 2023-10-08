@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <div>
+        <label for="">ID: </label>
+        <input type="text" id="supplierId">
+    </div>
+    <div>
+        <button onclick="deleteSupplier()">Delete Supplier</button>
+    </div>
+
+</body>
+<script>
+
+    function deleteSupplier() {
+        var id = document.getElementById('supplierId').value;
+
+        axios.delete('https://northwind.vercel.app/api/suppliers/' + id)
+            .then(res => {
+                alert('Silme işlemi başarılı!')
+            })
+
+    }
+
+</script>
+
+</html>
