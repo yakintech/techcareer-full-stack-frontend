@@ -1,0 +1,4 @@
+1) https://northwind.vercel.app/api/products dan productları çek ve ul-li içerisine isimlerini yaz
+2) Ekrana 4 adet input ve bir buton koy. Inputları doldur ve datayı web servise post et 
+(name, unitPrice, unitsInStock, categoryId)
+3) Ekrana bir input ve bir button koy. Butona tıkladığında inputtan aldığı id ile datayı silsin!
