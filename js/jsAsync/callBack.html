@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    function calc(x, y, print) {
+
+        var q = x + y;
+        //
+        //
+        //
+        print(q)
+
+    }
+
+
+
+    calc(10, 20, test)
+
+
+    function test(data) {
+        console.log(data);
+    }
+
+
+    calc(5, 7, function (data) {
+
+        console.log(data);
+    })
+
+
+    var cities = ["İzmir", "İstanbul", "Ankara", "Aydın", "Erzincan"];
+
+
+    cities.forEach(getCities)
+
+
+    function getCities(item){
+        console.log('item', item);
+    }
+
+
+</script>
+
+</html>

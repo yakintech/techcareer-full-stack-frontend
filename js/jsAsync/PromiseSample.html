@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    async function hello() {
+
+        var user = {
+            name: ''
+        }
+
+        // console.log(user.address.lowerCase());
+
+        return "Hello Promise"
+    }
+
+    //bir fonksiyon promise dönüyorsa ( yani async bir function ise!) bunu then anahtar kelimesiyle yakalayabilirim!
+
+
+    // hello()
+    //     .then(res => {
+    //         console.log('Data', res);
+    //     })
+    //     .catch(err => {
+    //         console.log("Promise Error", err);
+    //     })
+
+
+    console.log(hello());
+
+
+    //fullfilled, rejected, PENDING
+
+
+
+    let myPromise = new Promise(function (resolve, reject) {
+
+        try {
+            var x = Math.PI;
+            x = x * x;
+
+            resolve(x)
+
+        } catch (error) {
+            reject(error)
+        }
+
+    })
+
+
+    myPromise.then(res => {
+        console.log(res);
+    })
+
+
+
+    var result = fetch('');
+
+    var result2 = fetch('')
+
+
+    Promise.all([result, result2])
+    .then(res => {
+        
+    })
+
+</script>
+
+</html>
