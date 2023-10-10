@@ -1,0 +1,9 @@
+1) https://northwind.vercel.app/api/orders ları fetch ile çek ve ul-li içerisine customerId yazdır.
+
+2) Country USA olan kaç adet order var?
+
+3) Order Date
+a) 1996 yılındaki siparişleri console a yaz
+b)*** Geciken siparişleri console a yaz
+
+İşlemlerde fetch veya axios kullanabilirsiniz.

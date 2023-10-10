@@ -1,0 +1,8 @@
+1) Data kaynağı: https://northwind.vercel.app/api/suppliers
+
+** Company Name M harfi ile başlayan supplier ları console a yaz
+
+** Country Japan olan kaç Supplier var?
+
+** bir ul aç. Dışarıdan aldığın datayı FETCH ile içerisine doldur. Li içerisinde companyName yazacak
+
